@@ -14,7 +14,7 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       colors:{
-        'custom-pink':'#fcd5ce'
+        'custom-violet':'#f1f2ff'
       }
     },
   },
@@ -26,3 +26,6 @@ export default config;
 // e8e8e4 gris verde muy clarito
 // d8e2dc gris verde un poco mas oscuro
 // f9dcc4 color piel muy clarito
+// -----------
+// violeta #f1f2ff
+// 
