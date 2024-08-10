@@ -15,6 +15,9 @@ const config: Config = {
       },
       colors:{
         'custom-violet':'#f1f2ff'
+      },
+      fontFamily:{
+        sans:["Rubik", 'sans-serif']
       }
     },
   },

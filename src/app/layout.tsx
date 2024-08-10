@@ -17,12 +17,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
-        <nav>
-          <Nav />
-        </nav>
-        {children}
-      </body>
-    </html>
-  );
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+          <link rel="preconnect" href="https://fonts.gstatic.com"/>
+            <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Rubik:wght@300&display=swap" rel="stylesheet"/>
+            </head>
+            <body>
+              <nav>
+                <Nav />
+              </nav>
+              {children}
+            </body>
+          </html>
+          );
 }
