@@ -3,3 +3,8 @@
 @tailwind utilities;
 
 
+@font-face {
+  font-family: 'GoodSans';
+  src: url('/GoodSans-Thin.woff2') format('woff2'),
+       url('/GoodSans-Thin.woff') format('woff');
+}

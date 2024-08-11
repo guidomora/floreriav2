@@ -17,8 +17,10 @@ const config: Config = {
         'custom-violet':'#f1f2ff'
       },
       fontFamily:{
-        sans:["Rubik", 'sans-serif']
-      }
+        sans:["Rubik", 'sans-serif'],
+        poppins:["Poppins", 'sans-serif'],
+        goodSans:['GoodSans', 'sans-serif']
+      },
     },
   },
   plugins: [],
