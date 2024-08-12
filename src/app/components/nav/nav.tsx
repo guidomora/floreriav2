@@ -4,7 +4,7 @@ const menuItems = [
   {title: 'Ramos', path:'/ramos'},
   {title: 'Cajas', path:'/ramos'},
   {title: 'Condolencias', path:'/ramos'},
-  {title: 'Otros...', path:'/ramos'},
+  {title: 'Otros...', path:'/'},
 ]
 
 const Nav = () => {

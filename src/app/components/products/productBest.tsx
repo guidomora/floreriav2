@@ -11,26 +11,26 @@ interface BestSellers {
 
 const ProductBest = ({ title, price, img, productPath, categoryPath }: BestSellers) => {
   return (
-    <div className="w-[25vw] bg-white h-[40vw] rounded-3xl shadow-2xl flex flex-col justify-between">
+    <div className="h-[55vh] w-[35vh] md:h-[47vh] md:w-[40%] lg:w-[20%] bg-white  rounded-3xl shadow-2xl flex flex-col justify-between">
       <Image
         className="rounded-3xl h-[80%] w-[100%]"
         src={img}
         width={500}
         height={500}
         alt="ramo" />
-      <div className="h-[100%] p-4 flex justify-around w-[100%]">
-        <div className="flex flex-col justify-center w-[60%]">
-          <h4 className="text-xl text-violet-500">{title}</h4>
-          <span className="text-lg font-thin mt-2">Precio:
-            <strong className="ml-2 text-violet-500">${price}</strong>
+      <div className="h-[100%] p-2 flex-col justify-between">
+        <div className="flex justify-center items-baseline gap-4 mb-3">
+          <h4 className="text-sm text-violet-400">{title}</h4>
+          <span className="text-sm font-thin">
+            <strong className=" text-violet-700">${price}</strong>
           </span>
         </div>
-        <div className="flex flex-col justify-between w-[40%]">
-          <Link href={productPath}>
-            <button className="w-[100%] hover:text-violet-500 hover:bg-white hover:border border-violet-500 text-white bg-violet-500 p-3 rounded-xl ">Ver producto</button>
+        <div className="flex gap-4 w-[100%]">
+          <Link className="w-[100%]" href={productPath}>
+            <button className="text-xs w-[100%] hover:text-violet-500 hover:bg-white hover:border border-violet-500 text-white bg-violet-500 p-2 rounded-xl ">Ver producto</button>
           </Link>
-          <Link href={categoryPath}>
-            <button className=" w-[100%] hover:border-violet-500 hover:text-white hover:bg-violet-500 text-violet-500 bg-white border border-violet-500 p-3 rounded-xl">Ver ramos</button>
+          <Link className="w-[100%]" href={categoryPath}>
+            <button className="text-xs w-[100%] hover:border-violet-500 hover:text-white hover:bg-violet-500 text-violet-500 bg-white border border-violet-500 p-2 rounded-xl">Ver Ramos</button>
           </Link>
 
         </div>

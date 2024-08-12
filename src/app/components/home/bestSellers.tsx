@@ -28,7 +28,7 @@ const BestSellers = () => {
     return (
         <div className="my-12 flex flex-col items-center justify-center">
             <h2 className="text-center text-4xl font-thin ">Preferidos por nuestros clientes</h2>
-            <div className="flex justify-evenly w-[100vw] p-4 mt-10 flex-wrap">
+            <div className="flex flex-col gap-28 lg:gap-0 lg:flex-row items-center lg:justify-evenly  w-[100%] p-4 mt-10">
                 {bestSellers.map((bestSeller) =>
                     <ProductBest key={bestSeller.title} title={bestSeller.title} price={bestSeller.price
                     } img={bestSeller.img} productPath={bestSeller.productPath} categoryPath={bestSeller.categoryPath} />
