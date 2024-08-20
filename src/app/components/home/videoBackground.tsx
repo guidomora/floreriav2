@@ -18,7 +18,7 @@ export const VideoBackground = () => {
             </div>
             <video
             className="absolute top-0 left-0 w-full h-full object-cover"
-            src={require('../../../../public/recorte.mp4')} autoPlay muted loop />
+            src={'/recorte.mp4'} autoPlay muted loop />
         </div>
         <div>
             <BestSellers />
