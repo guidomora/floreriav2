@@ -11,9 +11,9 @@ interface BestSellers {
 
 const ProductBest = ({ title, price, img, productPath, categoryPath }: BestSellers) => {
   return (
-    <div className=" bg-white  rounded-3xl shadow-2xl flex flex-col justify-between m-2 w-[75%] sm:w-[35%] md:w-[35%]  lg:w-[25%] xl:w-[20%]">
+    <div className=" bg-white  rounded-3xl shadow-2xl flex flex-col justify-between m-2 w-[75%] sm:w-[35%] md:w-[35%]  lg:w-[25%] xl:w-[20%] 2xl:w-[18%]">
       <Image
-        className="rounded-3xl sm:h-[32vh] md:h-[35vh] lg:h-[45vh] w-[100%]"
+        className="rounded-3xl sm:h-[32vh] md:h-[35vh] lg:h-[45vh] 2xl:h-[48vh]"
         src={img}
         width={500}
         height={500}
