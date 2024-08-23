@@ -8,3 +8,17 @@
   src: url('/GoodSans-Thin.woff2') format('woff2'),
        url('/GoodSans-Thin.woff') format('woff');
 }
+
+
+@keyframes bounce-small {
+  0%, 100% {
+    transform: translateY(2px);
+  }
+  50% {
+    transform: translateY(-2px);
+  }
+}
+
+.bounce-small {
+  animation: bounce-small 1.1s infinite;
+}

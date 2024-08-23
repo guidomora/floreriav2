@@ -5,10 +5,10 @@ import BurgerMenu from "./BurgerMenu/BurgerMenu"
 import { useEffect, useState } from "react"
 
 export const menuItems = [
-  { title: 'Ramos', path: '/ramos' },
-  { title: 'Cajas', path: '/ramos' },
-  { title: 'Condolencias', path: '/ramos' },
-  { title: 'Otros...', path: '/' },
+  { title: 'Ramos', path: '/categoria/ramos' },
+  { title: 'Cajas', path: '/categoria/cajas' },
+  { title: 'Condolencias', path: '/categoria/condolencias' },
+  { title: 'Arreglos a medida', path: '/categoria/arreglos' },
 ]
 
 const Nav = () => {

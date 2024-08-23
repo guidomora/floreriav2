@@ -6,6 +6,7 @@ import React from 'react'
 export interface NavProps {
     title: string
     path: string
+    onclick?: () => void
 }
 
 const NavItems = ({ title, path }: NavProps) => {
