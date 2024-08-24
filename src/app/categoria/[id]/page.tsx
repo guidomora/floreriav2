@@ -17,7 +17,7 @@ const descriptionSelector = (id:string) => {
   switch (id) {
     case 'Cajas':
       return metaDescriptionCajas
-    case 'Ramos':
+    case 'Ramo':
       return metaDescriptionRamos
     case 'Condolencias':
       return metaDescriptionCoronas

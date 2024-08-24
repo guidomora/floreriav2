@@ -4,7 +4,7 @@ import { ProductProps } from "./DataProvider";
 
 interface DataContextProps {
     products: ProductProps[];
-    getData: () => void
+    getData: (category: string) => void
 }
 
 export const DataContext = createContext<DataContextProps>({} as DataContextProps);
