@@ -1,4 +1,4 @@
-import { IoCallOutline } from "react-icons/io5"
+import { IoCallOutline, IoLogoInstagram } from "react-icons/io5"
 import Instagram from "../svgs/instagram"
 import { WhatsApp } from "../svgs/whatsApp"
 import Link from "next/link"
@@ -8,7 +8,7 @@ import { FaWhatsapp } from "react-icons/fa"
 
 const Footer = () => {
     return (
-        <div className="h-[40vh] sm:h-[22vh] bg-violet-200 rounded-t-2xl flex flex-col justify-between items-center p-4">
+        <div className="h-[40vh] sm:h-[22vh] bg-violet-200 rounded-t-2xl flex flex-col justify-between items-center p-4 mt-auto">
             <div className="flex flex-col justify-around h-[100%] sm:flex sm:flex-row sm:justify-between sm:w-[100%] mt-2">
                 <div className="flex flex-col items-center sm:items-start">
                     <p className="font-medium underline mb-2">Contacto</p>
@@ -27,7 +27,7 @@ const Footer = () => {
                         </div>
                         <div>
                             <Link href={'https://www.instagram.com/floreriamorabito/'} target="blank" className="flex items-center text-gray-600">
-                                <Instagram className="mr-2" />
+                                <IoLogoInstagram size={'1.4em'} className="mr-2" />
                                 @floreriamorabito
                             </Link>
                         </div>

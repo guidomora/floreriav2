@@ -1,4 +1,4 @@
-import ProductBest from "../products/productBest"
+import ProductBest from "../products/ProductsBest/productBest"
 
 const bestSellers = [
     {

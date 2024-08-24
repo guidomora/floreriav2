@@ -19,7 +19,7 @@ export const VideoBackground = () => {
                 <ButtonSlide />
             </div>
             <video
-            className="absolute top-0 left-0 w-full h-full object-cover"
+            className="absolute top-0 left-0 w-full h-full object-cover pointer-events-none"
             src={'/recorte.mp4'} autoPlay muted loop />
         </div>
         <div>
