@@ -5,6 +5,7 @@ import BurgerMenu from "./BurgerMenu/BurgerMenu"
 import { useEffect, useState } from "react"
 
 export const menuItems = [
+  { title: 'Inicio', path: '/' },
   { title: 'Ramos', path: '/categoria/Ramo' },
   { title: 'Cajas', path: '/categoria/Caja' },
   { title: 'Condolencias', path: '/categoria/Condolencias' },
