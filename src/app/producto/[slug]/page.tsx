@@ -1,7 +1,7 @@
-'use client'
 
-import { DataContext } from '@/app/context/DataContext'
-import React, { useContext } from 'react'
+import { ProductProps } from '@/app/context/DataProvider'
+import { getProduct } from '@/app/Data/OneProduct'
+import { Metadata, ResolvingMetadata } from 'next'
 
 interface Props {
     params:{
@@ -9,8 +9,29 @@ interface Props {
     }
 }
 
+export async function generateMetadata(
+  { params }: Props,
+  parent: ResolvingMetadata
+): Promise<Metadata> {
+  // read route params
+  const id = params.slug.replace(/_/g, " ")
+
+  // fetch data
+  const product = await getProduct(id)
+ 
+ 
+  return {
+    title: product?.title,
+    openGraph: {
+      title:product?.title,
+      description:product?.description,
+      images: [product?.image!],
+    },
+    description: product?.description
+  }
+}
+
 const ProductPage = ({params}:Props) => {
-  const {getProduct} = useContext(DataContext)
   
   const formatTitle = params.slug.replace(/_/g, " ")
 
@@ -19,7 +40,7 @@ const ProductPage = ({params}:Props) => {
   
     
   return (
-    <div>{params.slug}</div>
+    <div>{formatTitle}</div>
   )
 }
 

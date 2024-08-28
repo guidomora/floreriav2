@@ -42,7 +42,7 @@ export async function generateMetadata(
   // const previousImages = (await parent).openGraph?.images || []
  
   return {
-    title: id,
+    title: `${id} Floreria Morabito`,
     // openGraph: {
     //   images: ['/some-specific-page-image.jpg', ...previousImages],
     // },
