@@ -47,11 +47,33 @@ export const DataProvider = ({ children }: DataProviderProps) => {
         dispatch({ type: "getData", payload: products });
     }
 
+    const getProduct = async (title:string) => {
+        // const product = state.products.find((product) => product.title == title)
+        // console.log(product);
+        // return product
+        const q = query(collection(db, "items"), where("titulo", "==", title))
+        const product: ProductProps[] = []
+        const querySnapshot = await getDocs(q)
+        querySnapshot.forEach((doc) => {
+            product.push({
+                description: doc.data().descripcion,
+                image: doc.data().imagen,
+                category: doc.data().tipo,
+                title: doc.data().titulo,
+                price: doc.data().precio,
+            });
+        });
+        console.log(product);
+        return product
+        
+    }
+
     
     return (
         <DataContext.Provider value={{
             ...state,
-            getData
+            getData,
+            getProduct
         }}>
             {children}
         </DataContext.Provider>
