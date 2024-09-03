@@ -46,7 +46,7 @@ const ProductPage = async ({ params }: Props) => {
   const product = await getProduct(formatTitle)
 
   return (
-    <div>
+    <div className='bg-violet-50'>
       <ProductPageDetail image={product!.image} title={product!.title} price={product!.price} description={product!.description} />
     </div>
   )
