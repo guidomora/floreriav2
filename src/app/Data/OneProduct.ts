@@ -16,5 +16,12 @@ export const getProduct = async (title:string):Promise<ProductProps | null> => {
             price: doc.data().precio,
         };
     }
+    
     return null
 }
+
+// export const getProduct = async (title:string) => {
+//     const q = query(collection(db, "items"), where("titulo", "==", title))
+//     const product = await getDocs(q);
+//     return product
+// }
