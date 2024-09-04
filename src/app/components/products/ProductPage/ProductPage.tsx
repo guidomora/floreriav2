@@ -1,11 +1,13 @@
 import { ProductProps } from "@/app/context/DataProvider"
 import Image from "next/image"
+import Link from "next/link";
 
 
 const ProductPageDetail = ({ title, image, description, price }: ProductProps) => {
 
     console.log(title, image, description, price);
 
+    const message = `${title}, https://floreriamorabito.com.ar/Ramo/${title}`
 
     return (
         <div className="flex pt-[10vh] justify-around p-6 h-screen">
@@ -18,7 +20,9 @@ const ProductPageDetail = ({ title, image, description, price }: ProductProps) =
                     <p className="text-xl text-start">{description}</p>
                 </div>
                 <p className="text-2xl text-violet-300 font-thin text-start">${price}</p>
-                <button className="p-4 rounded-3xl bg-violet-600 text-white text-lg">Encargar Ramo</button>
+                <Link href={`https://wa.me/1169402036?text=Hola%20quisiera%20encargar%20${message}`}>
+                    <button className="p-4 rounded-3xl bg-violet-600 text-white text-lg">Encargar Ramo</button>
+                </Link>
             </div>
         </div>
     )
