@@ -67,9 +67,7 @@ const ProductPage = async ({ params }: Props) => {
   
 
   const formatTitle = params.slug.replace(/_/g, " ")
-  // const product = await getProduct(formatTitle)
   const product = await getTheProduct(formatTitle);
-  console.log(product);
   if (!product) {
     return <p>Producto no encontrado</p>; // Manejo de producto no encontrado
   }
@@ -77,12 +75,11 @@ const ProductPage = async ({ params }: Props) => {
 
   return (
     <div className='bg-violet-50'>
-      <ProductPageDetail image={product!.image} title={product!.title} price={product!.price} description={product!.description} />
+      <ProductPageDetail image={product!.image} title={product!.title} price={product!.price} description={product!.description} category={product!.category} />
     </div>
   )
 }
 
 export const revalidate = 604800;
-// export const revalidate = 60;
 
 export default ProductPage
