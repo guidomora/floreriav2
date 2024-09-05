@@ -82,7 +82,7 @@ const ProductPage = async ({ params }: Props) => {
   )
 }
 
-// export const revalidate = 604800;
-export const revalidate = 60;
+export const revalidate = 604800;
+// export const revalidate = 60;
 
 export default ProductPage
