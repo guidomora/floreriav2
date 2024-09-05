@@ -46,26 +46,26 @@ const ProductPageDetail = ({ title, image, description, price, category }: Produ
     const formattedCategory = pluralizeCategory(category!);
     const time = timeCategory(category!)
     return (
-        <div className="flex flex-col items-center md:flex-row pt-[10vh] md:justify-around p-6 h-full">
-            <div className="border-2 rounded-2xl border-violet-300 p-4 bg-slate-50 max-h-[100%]">
+        <div className="flex flex-col items-center lg:items-start lg:flex-row pt-[10vh] md:justify-around p-6 min-h-screen">
+            <div className="border-2 rounded-2xl border-violet-300 p-4 bg-slate-50 w-[100%] sm:w-[75%] lg:w-[50%]">
                 <Image className="h-[100%] w-[100%] rounded-2xl" width={500} height={500} src={image} alt={'title'} />
             </div>
-            <div className="flex flex-col justify-evenly h-[70%] w-[50%]">
-                <div className="h-[50%] flex flex-col justify-around border-2 rounded-2xl border-violet-300 p-4 bg-slate-50">
+            <div className="flex flex-col w-[100%] sm:w-[75%] lg:w-[45%]">
+                <div className="mt-8 lg:mt-0 mb-8 h-[47vh] sm:h-[35vh] lg:h-[30vh] flex flex-col justify-around border-2 rounded-2xl border-violet-300 p-4 bg-slate-50">
                     <div>
                         <h1 className="text-3xl text-violet-400 text-start mb-4">{title}</h1>
                         <p className="text-xl text-start">{description}</p>
                     </div>
-                    <p className="text-2xl text-violet-300 font-thin text-start">${price}</p>
-                    <Link target="blank" href={`https://wa.me/1169402036?text=Hola%20quisiera%20encargar%20${message}`}>
-                        <button className="p-4 rounded-3xl bg-violet-600 text-white text-lg">Encargar Producto</button>
+                    <p className="text-2xl text-violet-400 font-thin text-start">${price}</p>
+                    <Link target="blank" className="" href={`https://wa.me/1169402036?text=Hola%20quisiera%20encargar%20${message}`}>
+                        <button className="w-[100%] mt-2 sm:mt-0 p-4 rounded-3xl bg-violet-600 text-white text-lg">Encargar Producto</button>
                     </Link>
                 </div>
                 <div className="flex flex-col border-2 rounded-2xl border-violet-300 p-4 bg-slate-50 text-start">
                     <h2 className="text-xl text-violet-400 mb-2">Importante:</h2>
                     <p className="">Para las entregas en el dia, tenga en cuenta que los productos 
                         se elaboran en el momento y esto puede llevar tiempo.</p>
-                    <p className="mt-2 font-bold">Los {formattedCategory} tardan aproximadamente {time}</p>
+                    <p className="mt-2">Los {formattedCategory} tardan aproximadamente <strong>{time}</strong></p>
                 </div>
             </div>
         </div>

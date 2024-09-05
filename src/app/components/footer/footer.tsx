@@ -12,7 +12,7 @@ const Footer = () => {
             <div className="flex flex-col justify-around h-[100%] sm:flex sm:flex-row sm:justify-between sm:w-[100%] mt-2">
                 <div className="flex flex-col items-center sm:items-start">
                     <p className="font-medium underline mb-2">Contacto</p>
-                    <div className="flex flex-col justify-around items-start w-40 gap-y-1">
+                    <div className="flex flex-col justify-around items-center sm:items-start w-40 gap-y-1">
                         <div>
                             <Link href={'https://wa.me/1169402036'} target="blank" className="flex items-center text-gray-600">
                                 <FaWhatsapp size={'1.4em'} className="mr-2" />
