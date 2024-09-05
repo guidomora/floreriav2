@@ -8,6 +8,7 @@ interface CategoryProps {
     category:string
 }
 
+
 const ProductList = ({category}:CategoryProps) => {
     
     const {getData, products} = useContext(DataContext)

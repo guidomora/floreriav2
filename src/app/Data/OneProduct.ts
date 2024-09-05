@@ -2,7 +2,7 @@ import { collection, getDocs, query, where } from "firebase/firestore";
 import { ProductProps } from "../context/DataProvider";
 import { db } from "../firebase/FireBase";
 
-export const getProduct = async (title:string):Promise<ProductProps | null> => {
+export const getProduct = async (title: string): Promise<ProductProps | null> => {
     const q = query(collection(db, "items"), where("titulo", "==", title))
     // const product: ProductProps[] = []
     const querySnapshot = await getDocs(q)
@@ -16,7 +16,7 @@ export const getProduct = async (title:string):Promise<ProductProps | null> => {
             price: doc.data().precio,
         };
     }
-    
+
     return null
 }
 
@@ -25,3 +25,25 @@ export const getProduct = async (title:string):Promise<ProductProps | null> => {
 //     const product = await getDocs(q);
 //     return product
 // }
+
+export const getData = async () => {
+    const querySnapshot = await getDocs(collection(db, "items"))
+
+    const products: ProductProps[] = [];
+    querySnapshot.forEach((doc) => {
+        products.push({
+            description: doc.data().descripcion,
+            image: doc.data().imagen,
+            category: doc.data().tipo,
+            title: doc.data().titulo,
+            price: doc.data().precio,
+        });
+    });
+    return products
+
+    // const querySnapshot = await getDocs(collection(db, "items"));
+    // querySnapshot.forEach((doc) => {
+    //     // doc.data() is never undefined for query doc snapshots
+    //     console.log(doc.id, " => ", doc.data());
+    // });
+}

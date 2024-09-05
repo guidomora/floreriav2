@@ -17,6 +17,7 @@ const ProductCard = ({ image, price, title }: ProductProps) => {
             width={500}
             height={500}
             alt="ramo"
+            priority={false}
           />
         </div>
         <div className="p-2 flex-col justify-between">

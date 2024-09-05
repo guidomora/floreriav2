@@ -5,9 +5,10 @@ import Link from "next/link";
 
 const ProductPageDetail = ({ title, image, description, price }: ProductProps) => {
 
-    console.log(title, image, description, price);
-
-    const message = `${title}, https://floreriamorabito.com.ar/Ramo/${title}`
+    const formatTitle = title.replace(/ /g, "_")
+    // http://localhost:3000/
+    // https://floreriamorabito.com.ar/producto/
+    const message = `${title}, https://floreriamorabito.com.ar/producto/${formatTitle}`
 
     return (
         <div className="flex pt-[10vh] justify-around p-6 h-screen">
@@ -20,7 +21,7 @@ const ProductPageDetail = ({ title, image, description, price }: ProductProps) =
                     <p className="text-xl text-start">{description}</p>
                 </div>
                 <p className="text-2xl text-violet-300 font-thin text-start">${price}</p>
-                <Link href={`https://wa.me/1169402036?text=Hola%20quisiera%20encargar%20${message}`}>
+                <Link target="blank" href={`https://wa.me/1169402036?text=Hola%20quisiera%20encargar%20${message}`}>
                     <button className="p-4 rounded-3xl bg-violet-600 text-white text-lg">Encargar Ramo</button>
                 </Link>
             </div>
