@@ -50,8 +50,8 @@ const ProductPageDetail = ({ title, image, description, price, category }: Produ
     <div className="flex flex-col pt-[10vh]">
       <BackTobutton />
       <div className="flex flex-col items-center lg:items-start lg:flex-row md:justify-around p-6 min-h-screen">
-        <div className="border-2 rounded-2xl border-violet-300 p-4 bg-slate-50 w-[100%] sm:w-[75%] lg:w-[40%]">
-          <Image className="h-[60vh] sm:h-[70vh] object-cover w-[100%] rounded-2xl" width={500} height={500} src={image} alt={'title'} />
+        <div className="border-2 rounded-2xl border-violet-300 p-4 bg-slate-50 w-[100%] sm:w-[75%] lg:w-[40%] 2xl:w-[33%] ">
+          <Image className=" w-[100%] rounded-2xl" width={500} height={500} src={image} alt={'title'} />
         </div>
         <div className="flex flex-col w-[100%] sm:w-[75%] lg:w-[45%]">
           <div className="mt-8 lg:mt-0 mb-8 h-[47vh] sm:h-[35vh] lg:h-[30vh] flex flex-col justify-around border-2 rounded-2xl border-violet-300 p-4 bg-slate-50">
