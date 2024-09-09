@@ -54,7 +54,7 @@ const CategoryPage = ({params}:Props) => {
 
   return (
     <div>
-      <h1 className="text-3xl mt-24 text-center">{id}</h1>
+      <h1 className="text-3xl mt-[10vh] text-center">{id}</h1>
       <ProductList category={id} />
     </div>
   )

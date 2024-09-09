@@ -54,14 +54,15 @@ const ProductPageDetail = ({ title, image, description, price, category }: Produ
           <Image className=" w-[100%] rounded-2xl" width={500} height={500} src={image} alt={'title'} />
         </div>
         <div className="flex flex-col w-[100%] sm:w-[75%] lg:w-[45%]">
-          <div className="mt-8 lg:mt-0 mb-8 h-[47vh] sm:h-[35vh] lg:h-[30vh] flex flex-col justify-around border-2 rounded-2xl border-violet-300 p-4 bg-slate-50">
+          <div className="mt-8 lg:mt-0 mb-8 gap-8 
+          flex flex-col justify-evenly border-2 rounded-2xl border-violet-300 p-4 bg-slate-50">
             <div>
               <h1 className="text-3xl text-violet-400 text-center lg:text-start mb-4">{title}</h1>
               <p className="text-xl text-center lg:text-start">{description}</p>
             </div>
             <p className="text-2xl text-violet-400 font-thin text-center lg:text-start">${price}</p>
             <Link target="blank" className="flex justify-center" href={`https://wa.me/1169402036?text=Hola%20quisiera%20encargar%20${message}`}>
-              <button className="w-5/6 mt-2 sm:mt-0 p-4 rounded-3xl bg-violet-600 text-white text-lg">Encargar Producto</button>
+              <button className="w-5/6 p-4 rounded-3xl bg-violet-600 text-white text-lg">Encargar Producto</button>
             </Link>
           </div>
           <div className="flex flex-col border-2 rounded-2xl border-violet-300 p-4 bg-slate-50 text-start">
@@ -75,5 +76,7 @@ const ProductPageDetail = ({ title, image, description, price, category }: Produ
     </div>
   )
 }
+
+// h-[47vh] sm:h-[35vh] lg:h-[30vh]
 
 export default ProductPageDetail

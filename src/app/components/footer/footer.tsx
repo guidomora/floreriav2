@@ -8,7 +8,7 @@ import { FaWhatsapp } from "react-icons/fa"
 
 const Footer = () => {
     return (
-        <div className="h-[40vh] sm:h-[22vh] bg-violet-200 rounded-t-2xl flex flex-col justify-between items-center p-4 mt-auto">
+        <div className="bg-violet-200 rounded-t-2xl flex flex-col justify-between items-center p-4 mt-auto">
             <div className="flex flex-col justify-around h-[100%] sm:flex sm:flex-row sm:justify-between sm:w-[100%] mt-2">
                 <div className="flex flex-col items-center sm:items-start">
                     <p className="font-medium underline mb-2">Contacto</p>
@@ -39,7 +39,7 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div className="flex flex-col items-center sm:items-end">
+                <div className="flex flex-col items-center sm:items-end mt-6 sm:mt-0">
                     <p className="font-medium underline mb-2">Ubicación</p>
                     <div>
                         <Link href={'https://maps.app.goo.gl/Kn2b4TygxWSVxpf27'} target="blank" className="flex items-center text-gray-600">Av Montes de oca 1089 Barracas CABA
@@ -49,7 +49,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <p className="text-center text-gray-600">Floreria Morabito todos los derechos reservados 2024</p>
+            <p className="mt-6 text-center text-gray-600">Floreria Morabito todos los derechos reservados 2024</p>
         </div>
     )
 }
