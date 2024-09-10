@@ -17,7 +17,7 @@ const ProductList = ({category}:CategoryProps) => {
         
     }, [])
     
-    
+
     
 
   return (

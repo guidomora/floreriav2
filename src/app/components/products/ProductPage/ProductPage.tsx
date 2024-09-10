@@ -38,7 +38,7 @@ const timeCategory = (category: string) => {
 
 const ProductPageDetail = ({ title, image, description, price, category }: ProductProps) => {
 
-
+  
 
   const formatTitle = title.replace(/ /g, "_")
   // http://localhost:3000/
@@ -51,7 +51,8 @@ const ProductPageDetail = ({ title, image, description, price, category }: Produ
       <BackTobutton />
       <div className="flex flex-col items-center lg:items-start lg:flex-row md:justify-around p-6 min-h-screen">
         <div className="border-2 rounded-2xl border-violet-300 p-4 bg-slate-50 w-[100%] sm:w-[75%] lg:w-[40%] 2xl:w-[33%] ">
-          <Image className=" w-[100%] rounded-2xl" width={500} height={500} src={image} alt={'title'} />
+          <Image className=" w-[100%] rounded-2xl" width={1000}
+            height={1000} src={image} alt={'title'} />
         </div>
         <div className="flex flex-col w-[100%] sm:w-[75%] lg:w-[45%]">
           <div className="mt-8 lg:mt-0 mb-8 gap-8 
@@ -67,9 +68,11 @@ const ProductPageDetail = ({ title, image, description, price, category }: Produ
           </div>
           <div className="flex flex-col border-2 rounded-2xl border-violet-300 p-4 bg-slate-50 text-start">
             <h2 className="text-xl text-violet-400 mb-2">Importante:</h2>
+            <p className="my-2">Las imágenes son referenciales, los arreglos <strong>pueden variar</strong>  según la temporada 
+              y la disponibilidad de flores.</p>
             <p className="">Para las entregas en el dia, tenga en cuenta que los productos
               se elaboran en el momento y esto puede llevar tiempo.</p>
-            <p className="mt-2">Los {formattedCategory} tardan aproximadamente <strong>{time}</strong></p>
+            <p className="mt-2">Los {formattedCategory} tardan aproximadamente <strong>{time}.</strong></p>
           </div>
         </div>
       </div>
