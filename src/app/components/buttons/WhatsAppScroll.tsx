@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { WhatsApp } from "../svgs/whatsApp";
+import Link from "next/link";
 
 const WhatsAppScroll = () => {
   const [showButton, setShowButton] = useState(false);
@@ -32,7 +33,9 @@ const WhatsAppScroll = () => {
 
   return (
     <div className={`fixed z-40 top-[90%] right-0 transition-transform duration-300 ${showButton ? "translate-x-0" : "translate-x-full"}`}>
-      <WhatsApp className="mr-2" />
+      <Link href={'https://wa.me/1169402036'} target="blank">
+        <WhatsApp className="mr-2" />
+      </Link>
     </div>
   );
 };

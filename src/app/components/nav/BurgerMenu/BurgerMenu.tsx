@@ -19,6 +19,9 @@ const BurgerMenu = () => {
                 <button onClick={toggleMenu}>
                     <CiMenuBurger className={`cursor-pointer text-violet-500 ${menu ? 'hidden' : 'inline'}`} size={'2rem'} />
                 </button>
+                <div className="flex justify-center w-full">
+                    <h2 className="text-violet-500 text-xl mr-[2rem]">Floreria Morabito</h2>
+                </div>
             </div>
             <div className={`p-2 flex justify-between border-t-2 border-r-2 border-b-2 border-violet-500 z-20 fixed top-0 left-0 h-[100vh] w-[100vw] backdrop-blur-md transform transition-transform duration-300 ease-in-out ${menu ? 'translate-x-0' : '-translate-x-full'}`}>
                 <div className="flex flex-col gap-y-2">
