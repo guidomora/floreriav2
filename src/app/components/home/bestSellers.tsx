@@ -1,29 +1,6 @@
 import { preferidos } from "@/app/helpers/helpers"
 import ProductBest from "../products/ProductsBest/productBest"
 
-// const bestSellers = [
-//     {
-//         title: 'Ramo de flores variadas',
-//         price: '80.000',
-//         img: 'https://firebasestorage.googleapis.com/v0/b/floreria-morabito.appspot.com/o/ramo24.jpeg?alt=media&token=e9aff44d-779e-4943-bec6-bb7cd567346d',
-//         productPath: 'qqqqqqqqqq',
-//         categoryPath: 'wwwwwwww'
-//     },
-//     {
-//         title: 'Ramo de flores variadas',
-//         price: '80.000',
-//         img: 'https://firebasestorage.googleapis.com/v0/b/floreria-morabito.appspot.com/o/ramo24.jpeg?alt=media&token=e9aff44d-779e-4943-bec6-bb7cd567346d',
-//         productPath: 'qqqqqqqqqq',
-//         categoryPath: 'wwwwwwww'
-//     },
-//     {
-//         title: 'Ramo de flores variadas',
-//         price: '80.000',
-//         img: 'https://firebasestorage.googleapis.com/v0/b/floreria-morabito.appspot.com/o/ramo24.jpeg?alt=media&token=e9aff44d-779e-4943-bec6-bb7cd567346d',
-//         productPath: 'qqqqqqqqqq',
-//         categoryPath: 'wwwwwwww'
-//     }
-// ]
 
 const BestSellers = () => {
     return (
