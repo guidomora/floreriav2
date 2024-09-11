@@ -4,6 +4,7 @@ import "./globals.css";
 import Nav from "./components/nav/nav";
 import Footer from "./components/footer/footer";
 import { DataProvider } from "./context/DataProvider";
+import WhatsAppScroll from "./components/buttons/WhatsAppScroll";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -32,6 +33,9 @@ export default function RootLayout({
         </header>
         <main className="flex-grow">
           <DataProvider >
+            <div className="fixed z-40">
+              <WhatsAppScroll />
+            </div>
             {children}
           </DataProvider>
         </main>

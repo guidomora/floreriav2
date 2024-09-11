@@ -1,4 +1,5 @@
 import ProductList from "@/app/components/products/ProductList/ProductList"
+import { descriptionSelector, titleChange } from "@/app/helpers/helpers"
 import { Metadata, ResolvingMetadata } from "next"
 import { notFound } from "next/navigation"
 
@@ -8,25 +9,7 @@ interface Props {
   }
 }
 
-const metaDescriptionCajas = 'Cajas de flores de distintos tamaños, cajas de flores con chocolates. Envio de cajas con flores. Cajas premium para cumpleaños, regalos, festejos.' 
-const metaDescriptionRamos = 'Ramos de flores para regalar, cumpleaños y festejos. Envio de ramos de flores. Ramos de flores premium' 
-const metaDescriptionCoronas = 'Coronas de flores y bouquets para condolencias. Envios en el momento. Coronas premium. Llegamos a toco CABA y provincia' 
-const metaDescriptionArreglos = 'Arreglos florales personalizados para ocasiones especiales. Armado de todo tipo de arreglos' 
 
-const descriptionSelector = (id:string) => {
-  switch (id) {
-    case 'Cajas':
-      return metaDescriptionCajas
-    case 'Ramo':
-      return metaDescriptionRamos
-    case 'Condolencias':
-      return metaDescriptionCoronas
-    case 'Arreglos':
-      return metaDescriptionArreglos
-    default:
-      return ''
-  }
-}
 
 
 
@@ -46,15 +29,15 @@ export async function generateMetadata(
 
 const CategoryPage = ({params}:Props) => {
 
-  const {id} = params
+  let {id} = params
   
-  if (id === 'kids'){
-    notFound()
+  if (id === 'Arreglo'){
+    id = "Arreglo floral"
   }
 
   return (
     <div>
-      <h1 className="text-3xl mt-[10vh] text-center">{id}</h1>
+      <h1 className="text-3xl mb-10 mt-[10vh] text-center">{titleChange(id)}</h1>
       <ProductList category={id} />
     </div>
   )
