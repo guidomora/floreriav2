@@ -11,6 +11,16 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Floreria Morabito",
   description: "Ramos premium, condolencias, cajas de flores, envio de flores, coronas, ramos de novia, regalos,",
+  openGraph: {
+    title: 'Floreria Morabito',
+    description: 'Ramos premium, condolencias, cajas de flores, envio de flores, coronas, ramos de novia, regalos',
+    url: 'https://www.floreriamorabito.com.ar',
+    type: 'website',
+    // TODO:
+    images: [
+        'https://floreriav2.vercel.app/floreriaMeta.png',
+    ]
+  }
 };
 
 export default function RootLayout({
