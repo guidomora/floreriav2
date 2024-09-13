@@ -51,3 +51,5 @@ export const preferidos:Preferidos[] = [
   {img:"https://firebasestorage.googleapis.com/v0/b/floreria-morabito.appspot.com/o/caja6.jpeg?alt=media&token=70c02fd8-b7fb-42f0-8197-c45660873239",
      title:"Caja variada L", productLink:"/producto/Caja_variada_L", category:"Cajas", categoryLink:"/categoria/Caja"},
 ]
+
+export const categories = ["Caja", "Ramo", "Condolencias", "Arreglo"]

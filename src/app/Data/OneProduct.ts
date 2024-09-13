@@ -39,11 +39,6 @@ export const getData = async () => {
             price: doc.data().precio,
         });
     });
+    
     return products
-
-    // const querySnapshot = await getDocs(collection(db, "items"));
-    // querySnapshot.forEach((doc) => {
-    //     // doc.data() is never undefined for query doc snapshots
-    //     console.log(doc.id, " => ", doc.data());
-    // });
 }
