@@ -13,9 +13,9 @@ export const metadata:Metadata = {
     type: 'website',
     images: [
       {
-        url: 'https://firebasestorage.googleapis.com/v0/b/floreria-morabito.appspot.com/o/floreriaMeta.png?alt=media&token=442db6e1-c2fc-465c-98a2-886ac344e793',
-        width: 800,
-        height: 600,
+        // https://firebasestorage.googleapis.com/v0/b/floreria-morabito.appspot.com/o/floreriaMeta.png?alt=media&token=442db6e1-c2fc-465c-98a2-886ac344e793
+        // https://floreriav2.vercel.app/
+        url: 'https://floreriav2.vercel.app/floreriaMeta.png',
         alt: 'Floreria Morabito',
       },
     ]
