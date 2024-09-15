@@ -19,13 +19,17 @@ const Nav = () => {
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
     };
+  
+    // Establece el ancho de la ventana en el montaje del componente
+    handleResize();
+  
     window.addEventListener('resize', handleResize);
-
+  
     return () => {
       window.removeEventListener('resize', handleResize);
     };
-  }, [])
-  
+  }, []);
+
 
 
   return (
