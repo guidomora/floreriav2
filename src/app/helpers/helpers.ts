@@ -52,4 +52,5 @@ export const preferidos:Preferidos[] = [
      title:"Caja variada L", productLink:"/producto/Caja_variada_L", category:"Cajas", categoryLink:"/categoria/Caja"},
 ]
 
+// sitemap
 export const categories = ["Caja", "Ramo", "Condolencias", "Arreglo"]

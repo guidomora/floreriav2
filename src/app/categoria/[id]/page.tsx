@@ -31,11 +31,13 @@ const CategoryPage = ({params}:Props) => {
   
   let {id} = params
   
+  if (!categories.includes(id)) return notFound()
   if (id === 'Arreglo'){
     id = "Arreglo floral"
   }
+  console.log("--------------", id);
   
-  if (!categories.includes(id)) return notFound()
+    
   
   return (
     <div>
