@@ -3,6 +3,7 @@ import ProductPageDetail from '@/app/components/products/ProductPage/ProductPage
 import { ProductProps } from '@/app/context/DataProvider'
 import { getData, getProduct } from '@/app/Data/OneProduct'
 import next, { Metadata, ResolvingMetadata } from 'next'
+import { notFound } from 'next/navigation'
 
 
 
@@ -69,7 +70,7 @@ const ProductPage = async ({ params }: Props) => {
   const formatTitle = params.slug.replace(/_/g, " ")
   const product = await getTheProduct(formatTitle);
   if (!product) {
-    return <p>Producto no encontrado</p>; // Manejo de producto no encontrado
+    return notFound(); // Manejo de producto no encontrado
   }
 
 

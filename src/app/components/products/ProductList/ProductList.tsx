@@ -4,6 +4,7 @@ import { useContext, useEffect, useState } from "react"
 import ProductCard from "../ProductCard/ProductCard"
 import { DataContext } from "@/app/context/DataContext"
 import CardSkeleton from "../../loaders/CardSkeleton"
+import { notFound } from "next/navigation"
 
 interface CategoryProps {
   category: string
@@ -15,17 +16,19 @@ const ProductList = ({ category }: CategoryProps) => {
   const [loading, setLoading] = useState(true)
   useEffect(() => {
     const fetchData = async () => {
-      await getData(category);
+      await getData(category)
       setLoading(false);
     };
     fetchData();
   }, [])
 
+  
+  
 
   const skeletonCount = 8
 
   return (
-    <div className="flex justify-evenly flex-wrap gap-8 p-3">
+    <div className="flex justify-evenly flex-wrap gap-8 p-3 mb-4">
 
       {loading ? (
         Array.from({ length: skeletonCount }).map((_, index) => (

@@ -48,9 +48,6 @@ export const DataProvider = ({ children }: DataProviderProps) => {
     }
 
     const getProduct = async (title:string) => {
-        // const product = state.products.find((product) => product.title == title)
-        // console.log(product);
-        // return product
         const q = query(collection(db, "items"), where("titulo", "==", title))
         const product: ProductProps[] = []
         const querySnapshot = await getDocs(q)
@@ -63,7 +60,6 @@ export const DataProvider = ({ children }: DataProviderProps) => {
                 price: doc.data().precio,
             });
         });
-        console.log(product);
         return product
         
     }

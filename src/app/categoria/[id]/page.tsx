@@ -1,5 +1,5 @@
 import ProductList from "@/app/components/products/ProductList/ProductList"
-import { descriptionSelector, titleChange } from "@/app/helpers/helpers"
+import { categories, descriptionSelector, titleChange } from "@/app/helpers/helpers"
 import { Metadata, ResolvingMetadata } from "next"
 import { notFound } from "next/navigation"
 
@@ -28,16 +28,19 @@ export async function generateMetadata(
 }
 
 const CategoryPage = ({params}:Props) => {
-
+  
   let {id} = params
   
   if (id === 'Arreglo'){
     id = "Arreglo floral"
   }
-
+  
+  if (!categories.includes(id)) return notFound()
+  
   return (
     <div>
-      <h1 className="text-3xl mb-10 mt-[10vh] text-center">{titleChange(id)}</h1>
+      <h1 className="text-center text-violet-400 mt-[12vh] text-4xl hidden md:block">Floreria Morabito</h1>
+      <h2 className="text-3xl mb-10 md:mt-[5vh] mt-[10vh] text-center">{titleChange(id)}</h2>
       <ProductList category={id} />
     </div>
   )
