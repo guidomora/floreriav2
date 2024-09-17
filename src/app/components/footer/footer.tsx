@@ -1,6 +1,4 @@
 import { IoCallOutline, IoLogoInstagram } from "react-icons/io5"
-import Instagram from "../svgs/instagram"
-import { WhatsApp } from "../svgs/whatsApp"
 import Link from "next/link"
 import { SiGooglemaps } from "react-icons/si"
 import { FaWhatsapp } from "react-icons/fa"
@@ -48,8 +46,8 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-
             <p className="mt-6 text-center text-gray-600">Floreria Morabito todos los derechos reservados 2024</p>
+            <Link href={'https://portafolio-bay-xi.vercel.app/'} target="blank" className=" text-center text-gray-600">Desarrollado por G</Link>
         </div>
     )
 }

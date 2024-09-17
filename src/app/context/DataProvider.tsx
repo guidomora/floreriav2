@@ -3,7 +3,7 @@
 import { ReactNode, useEffect, useReducer } from "react"
 import { dataReducer } from "./DataReducer"
 import { DataContext } from "./DataContext"
-import { collection, getDocs, query, where } from "firebase/firestore"
+import { collection, getDocs, orderBy, query, where } from "firebase/firestore"
 import { db } from "../firebase/FireBase"
 
 const initialState: DbState = {
@@ -31,7 +31,7 @@ export const DataProvider = ({ children }: DataProviderProps) => {
     const [state, dispatch] = useReducer(dataReducer, initialState)
 
     const getData = async (category:string) => {
-        const q = query(collection(db, "items"), where("tipo", "==", category));
+        const q = query(collection(db, "items"), where("tipo", "==", category), orderBy("precio", "desc"));
         
         const products: ProductProps[] = [];
         const querySnapshot = await getDocs(q);

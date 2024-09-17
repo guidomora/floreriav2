@@ -6,6 +6,8 @@ import React from 'react'
 const ProductCard = ({ image, price, title }: ProductProps) => {
 
   const path = title.replace(/ /g, "_")
+  const formatedPrice = price.toLocaleString()
+  
 
   return (
     <div className="overflow-hidden bg-white justify-between rounded-3xl shadow-2xl flex flex-col m-2 w-[75%] sm:w-[35%] md:w-[35%]  lg:w-[35%] xl:w-[20%] 2xl:w-[18%]">
@@ -16,7 +18,7 @@ const ProductCard = ({ image, price, title }: ProductProps) => {
             src={image}
             width={1000}
             height={1000}
-            alt="ramo"
+            alt={title}
             priority={false}
           />
         </div>
@@ -24,7 +26,7 @@ const ProductCard = ({ image, price, title }: ProductProps) => {
           <div className="flex justify-between items-baseline gap-4 mb-3 min-h-[60px]">
             <h4 className="text-lg text-violet-700">{title}</h4>
             <span className="text-sm font-thin">
-              <strong className=" text-black text-lg">${price}</strong>
+              <strong className=" text-black text-lg">${formatedPrice}</strong>
             </span>
           </div>
           <div className="w-[100%]">

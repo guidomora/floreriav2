@@ -11,10 +11,8 @@ export const metadata:Metadata = {
     description: 'Ramos premium, condolencias, cajas de flores, envio de flores, coronas, ramos de novia, regalos',
     url: 'https://www.floreriamorabito.com.ar',
     type: 'website',
-    // TODO:
     images: [
-        'https://firebasestorage.googleapis.com/v0/b/floreria-morabito.appspot.com/o/floreriaMeta.png?alt=media&token=442db6e1-c2fc-465c-98a2-886ac344e793',
-        'https://floreriav2.vercel.app/floreriaMeta.png',
+        'https://firebasestorage.googleapis.com/v0/b/floreria-morabito.appspot.com/o/floreriaMetaEdited.jpg?alt=media&token=adf6d9d9-3079-4f6c-a6f7-a017ae7c6ffb',
     ]
   }
 }

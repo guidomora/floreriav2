@@ -1,5 +1,3 @@
-import { BsArrowDown } from 'react-icons/bs'
-import styles from './videoBackground.module.css'
 import BestSellers from './bestSellers'
 import ButtonSlide from '../buttons/ButtonSlide'
 import Link from 'next/link'

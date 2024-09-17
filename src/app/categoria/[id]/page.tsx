@@ -35,8 +35,6 @@ const CategoryPage = ({params}:Props) => {
   if (id === 'Arreglo'){
     id = "Arreglo floral"
   }
-  console.log("--------------", id);
-  
     
   
   return (
