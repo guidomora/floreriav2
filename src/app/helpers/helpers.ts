@@ -44,12 +44,12 @@ export interface Preferidos{
 }
 
 export const preferidos:Preferidos[] = [
+  {img:"https://firebasestorage.googleapis.com/v0/b/floreria-morabito.appspot.com/o/WhatsApp%20Image%202023-01-24%20at%2018.51.35.jpeg?alt=media&token=760eb7bf-4054-41c1-b662-f6b23a4962dd",
+     title:"Corona 4", productLink:"/producto/Corona_4", category:"Condolencias", categoryLink:"/categoria/Condolencias"},
   {img:"https://firebasestorage.googleapis.com/v0/b/floreria-morabito.appspot.com/o/ramo24.jpeg?alt=media&token=e9aff44d-779e-4943-bec6-bb7cd567346d",
      title:"Ramo premium grande", productLink:"/producto/Ramo_Premium_grande", category:"Ramos", categoryLink:"/categoria/Ramo"},
   {img:"https://firebasestorage.googleapis.com/v0/b/floreria-morabito.appspot.com/o/caja1.jpg?alt=media&token=c4815e5c-70fc-4acb-8de2-73da09be5a4a",
      title:"Caja de rosas rojas y blancas", productLink:"/producto/Caja_de_rosas_rojas_y_blancas", category:"Cajas", categoryLink:"/categoria/Caja"},
-  {img:"https://firebasestorage.googleapis.com/v0/b/floreria-morabito.appspot.com/o/caja6.jpeg?alt=media&token=70c02fd8-b7fb-42f0-8197-c45660873239",
-     title:"Caja variada L", productLink:"/producto/Caja_variada_L", category:"Cajas", categoryLink:"/categoria/Caja"},
 ]
 
 // sitemap

@@ -15,9 +15,9 @@ const BurgerMenu = () => {
     }
     return (
         <>
-            <div className='pl-2 h-[7vh] w-[100vw] bg-transparent backdrop-blur-md flex items-center justify-start z-20 fixed border-b  border-violet-400'>
+            <div className='pl-2 h-[8vh] w-[100vw] bg-transparent backdrop-blur-md flex items-center justify-start z-20 fixed border-b  border-violet-400'>
                 <button onClick={toggleMenu}>
-                    <CiMenuBurger className={`cursor-pointer text-violet-500 ${menu ? 'hidden' : 'inline'}`} size={'2rem'} />
+                    <CiMenuBurger className={` cursor-pointer text-black ${menu ? 'hidden' : 'inline'}`} size={'2rem'} />
                 </button>
                 <div className="flex justify-center w-full">
                     <h2 className="text-violet-500 text-xl mr-[2rem]">Floreria Morabito</h2>
